@@ -1,0 +1,35 @@
+.tabs {
+  background: #FFFFFF;
+  border: 1px solid #FFD200;
+  border-radius: 3px;
+  width: fit-content;
+  @include media-max(991) {
+    width: 100%;
+  }
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-max(991) {
+      width: 20%;
+    }
+    a {
+      word-break: break-word;
+      display: inline-block;
+      padding: 13px 20px;
+      @include media-max(991) {
+        font-size: 2.73vw;
+        width: 100%;
+        text-align: center;
+        padding: 13px 6px;
+      }
+      @include media-max(575) {
+        font-size: 3.73vw;
+      }
+    }
+    &.active {
+      background: #FFD200;
+      border-radius: 3px;
+    }
+  }
+}

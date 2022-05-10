@@ -1,0 +1,110 @@
+.banner {
+  background: linear-gradient(98.57deg, #F7F9FB 5.38%, #E5E9EF 95.34%);
+  position: relative;
+  @include media-max(991) {
+    text-align: center;
+  }
+  .container {
+    padding-top: 170px;
+    padding-bottom: 170px;
+    position: relative;
+    @include media-max(991) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 66%;
+    display: block;
+    background: url("../images/dist/decoration/banner.png");
+    background-size: cover;
+    @include media-max(375) {
+      background: url("../images/dist/decoration/banner-mobile.png");
+      height: 78%;
+    }
+  }
+  form {
+    z-index: 1;
+  }
+  &-info {
+    z-index: 1;
+    max-width: 690px;
+    width: 100%;
+    h1 {
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 100px;
+      line-height: 95px;
+      @include media-max(1199) {
+        font-size: 80px;
+        line-height: 80px;
+      }
+      @include media-max(991) {
+        font-size: 12.27vw;
+        line-height: 13.87vw;
+        margin-bottom: 4vw;
+      }
+      span {
+        color: #FFD124;
+      }
+    }
+    & > span {
+      display: block;
+      font-size: 26px;
+      line-height: 44px;
+      @include media-max(991) {
+        font-size: 4.80vw;
+        line-height: 8vw;
+        margin-bottom: 2.13vw;
+      }
+    }
+  }
+  &-img {
+    position: absolute;
+    object-fit: cover;
+    @include media-max(991) {
+      position: relative;
+      margin-bottom: 6.13vw;
+    }
+    &.version1 {
+      right: -20%;
+      top: 0;
+      width: 1034px;
+      height: 794px;
+      @include media-max(991) {
+        max-width: 1034px;
+        width: 100%;
+        right: auto;
+        height: auto;
+        max-height: 560px;
+      }
+    }
+    &.version2 {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 955px;
+      height: 527px;
+      @include media-max(991) {
+        max-width: 955px;
+        width: 100%;
+        height: auto;
+      }
+      @include media-max(400) {
+        left: auto;
+        height: 367px;
+        width: 664px;
+        right: 18%;
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        object-fit: cover;
+      }
+    }
+  }
+}

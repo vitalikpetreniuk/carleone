@@ -1,0 +1,71 @@
+.nav-mobile {
+  z-index: 2;
+  height: 100vh;
+  overflow: auto;
+  padding: 20px 15px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 90%;
+  background: #FFFFFF;
+  transition: .3s;
+  &.show {
+    left: 0;
+  }
+  .list {
+    margin-top: 24px;
+    @include media-max(575) {
+      font-size: 14px;
+    }
+    ul {
+      li {
+        padding: 10px 0;
+        &.drop {
+          position: relative;
+          &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
+            display: block;
+            width: 10px;
+            height: 5.8px;
+            background: url("../images/dist/icons/arrows/arrow-nav-2.svg") no-repeat;
+            background-size: cover;
+            transition: .3s;
+          }
+          &:hover {
+            &::before {
+              top: 20px;
+              transform: rotate(-180deg);
+            }
+            ul {
+              margin-left: 10px;
+              opacity: 1;
+              visibility: visible;
+              height: auto;
+              transition: .3s;
+            }
+          }
+        }
+        ul {
+          opacity: 0;
+          visibility: hidden;
+          height: 0;
+          li {
+            a {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .search {
+    margin-top: 25px;
+    input {
+      width: 100%;
+    }
+  }
+}

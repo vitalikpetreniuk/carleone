@@ -1,0 +1,88 @@
+.poster {
+  background: #F6F6F6;
+  padding: 50px 0 60px;
+  @include media-max(991) {
+    padding: 38px 0 50px;
+  }
+  .title {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 64px;
+    @include media-max(991) {
+      margin-bottom: 12.53vw;
+    }
+  }
+  &-list {}
+  &-card {
+    padding: 20px 10px 30px 30px;
+    width: calc(50% - 10px);
+    background: #FFFFFF;
+    border-radius: 3px;
+    @include media-max(1199) {
+      width: 100%;
+      &:first-of-type {
+        margin-bottom: 70px;
+        @include media-max(480) {
+          margin-bottom: 11.20vw;
+        }
+      }
+    }
+    @include media-max(575) {
+      padding: 20px 10px 24px 15px;
+    }
+    &__logo {
+      width: 174px;
+      height: 34px;
+      @include media-max(575) {
+        height: auto;
+        width: auto;
+      }
+    }
+    &__text {
+      margin: 20px 0;
+      font-weight: 500;
+      line-height: 19px;
+      @include media-max(575) {
+        margin: 5px 0 10px;
+        font-size: 14px;
+      }
+    }
+    &__link {
+      padding: 10px 16px;
+      width: fit-content;
+      font-weight: 600;
+      @include media-max(575) {
+        padding: 10px;
+        font-size: 14px;
+      }
+      span {
+        margin-left: 10px;
+      }
+    }
+    & > div {
+      &:first-of-type {
+        width: 50%;
+      }
+      &:last-of-type {
+        min-width: 257px;
+        position: relative;
+        @include media-max(575) {
+          min-width: auto;
+          max-width: 257px;
+          width: 100%;
+          margin-left: 20px;
+        }
+        img {
+          width: 100%;
+          height: 224px;
+          position: absolute;
+          bottom: -30px;
+          @include media-max(575) {
+            bottom: -24px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.why {
+  color: #FFFFFF;
+  padding: 50px 0 20px;
+  background: url("../images/dist/decoration/background1.jpg");
+  background-size: cover;
+  @include media-max(991) {
+    padding: 35px 0 15px;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    margin-bottom: 47px;
+    @include media-max(575) {
+      margin-bottom: 20px;
+    }
+  }
+  a {
+    color: #FFD124;
+    text-decoration: underline;
+  }
+  ul {
+    margin: 0 -25px;
+    @include media-max(991) {
+      margin: 0;
+    }
+    li {
+      margin: 0 25px 50px;
+      text-align: center;
+      width: calc(33.333% - 50px);
+      @include media-max(991) {
+        width: 100%;
+        margin: 0 0 35px 0;
+      }
+      i {
+        border: 2px solid #FFD124;
+        border-radius: 3px;
+        width: 100px;
+        height: 100px;
+        img {}
+      }
+      b {
+        margin: 25px 0 10px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        @include media-max(575) {
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+      p {
+        line-height: 30px;
+        @include media-max(575) {
+          font-size: 14px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

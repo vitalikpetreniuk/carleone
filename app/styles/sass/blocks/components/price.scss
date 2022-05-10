@@ -1,0 +1,120 @@
+.price {
+  padding: 80px 0 55px;
+  @include media-max(991) {
+    padding: 50px 0 25px;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    @include media-max(575) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .subtitle {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    @include media-max(575) {
+      margin-bottom: 25px;
+      font-size: 18px;
+    }
+  }
+
+  &-list {
+    margin: 0 -10px;
+    @include media-max(991) {
+      margin: 0;
+    }
+  }
+  &-card {
+    padding: 15px 25px 40px;
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin: 0 10px 25px;
+    width: calc(33.3333% - 20px);
+    @include media-max(991) {
+      width: 100%;
+      margin: 0 0 25px;
+    }
+    @include media-max(575) {
+      padding: 15px 9px 40px;
+    }
+    &.best {
+      border: 1px solid #FFD124;
+      background: #FFD124;
+      .button {
+        background: #000000;
+        color: #FFFFFF;
+      }
+      .price-card__head,
+      .price-card__list li{
+        border-bottom: 1px solid #E8BD1B;
+      }
+    }
+    &.alt-border {
+      border: 1px solid #FFD124;
+    }
+    &__head {
+      border-bottom: 1px solid #DBDBDB;
+      padding-bottom: 10px;
+      img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 18px;
+      }
+      b {
+        font-weight: 600;
+        font-size: 26px;
+      }
+      span {
+        min-height: 26px;
+        @include media-max(991) {
+          min-height: auto;
+        }
+      }
+    }
+
+    &__list {
+      margin-bottom: 34px;
+      li {
+        padding: 10px 0;
+        border-bottom: 1px solid #DBDBDB;
+        img {
+          width: 24px;
+          height: 24px;
+          margin-right: 15px;
+        }
+        span {
+          line-height: 26px;
+        }
+      }
+    }
+
+    &__cost {
+      margin-bottom: 20px;
+      span {
+        font-size: 26px;
+        font-weight: 600;
+        margin: 0 10px;
+      }
+      .old {
+        text-decoration-line: line-through;
+        color: #F15249;
+      }
+      .actual {}
+    }
+    .button {
+      padding: 20px 15px;
+      min-width: 250px;
+      width: fit-content;
+      margin: 0 auto;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}

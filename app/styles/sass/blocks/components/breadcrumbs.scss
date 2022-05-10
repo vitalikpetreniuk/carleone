@@ -1,0 +1,23 @@
+.breadcrumb {
+  padding: 20px 0 15px;
+  margin: 0;
+  &-item {
+    &.active {
+      color: #000000;
+    }
+    a {
+      font-size: 14px;
+      line-height: 18px;
+      color: #717171;
+    }
+    span {}
+    &+& {
+      padding-left: 5px;
+    }
+  }
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '/';
+  padding-left: 5px;
+}

@@ -1,0 +1,48 @@
+.videos {
+  padding: 50px 0 80px;
+  background: #F6F6F6;
+  @include media-max(575) {
+    padding: 50px 0;
+  }
+  .title {
+    display: block;
+    text-align: center;
+    margin-bottom: 55px;
+    @include media-max(575) {
+      margin-bottom: 20px;
+    }
+  }
+  &-list {
+    li {
+      position: relative;
+      height: 220px;
+      @include media-max(575) {
+        height: 53.33vw;
+      }
+      img {
+        object-fit: cover;
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        height: 100%;
+        @include media-max(575) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .slick-arrow {
+    z-index: 1;
+  }
+  .slick-prev {
+    left: 20px;
+    @include media-max(575) {
+      left: 10px;
+    }
+  }
+  .slick-next {
+    right: 20px;
+    @include media-max(575) {
+      right: 10px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.title {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 70px;
+  @include media-max(991) {
+    font-size: 6.67vw;
+    line-height: 7.8vw;
+    text-align: center;
+  }
+  @include media-max(575) {
+    font-size: 10.67vw;
+    line-height: 12.80vw;
+  }
+}

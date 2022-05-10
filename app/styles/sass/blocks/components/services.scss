@@ -1,0 +1,30 @@
+.services {
+  padding: 40px 20px 25px;
+  background: #FFD124;
+  border-radius: 3px;
+  @include media-max(575) {
+    padding: 20px 15px 5px;
+  }
+  li {
+    margin: 0 8px 15px 8px;
+    width: calc(16.6666% - 16px);
+    text-align: center;
+    @include media-max(991) {
+      margin: 0 2.5px 15px 2.5px;
+      width: calc(50% - 5px);
+      text-align: start;
+    }
+    @include media-max(575) {
+      font-size: 14px;
+    }
+    @include media-max(375) {
+      font-size: 3vw;
+    }
+    i {
+      margin-bottom: 14px;
+      @include media-max(991) {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}

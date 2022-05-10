@@ -1,0 +1,22 @@
+.main {
+  .catalog {
+    margin-top: 115px;
+    @include media-max(991) {
+      margin-top: 13.33vw;
+    }
+    &.alt {
+      margin: 0;
+    }
+  }
+  .press {
+    @include media-max(575) {
+      padding: 0;
+    }
+  }
+  .faq {
+    margin-bottom: 40px;
+    @include media-max(575) {
+      margin-bottom: 30px;
+    }
+  }
+}

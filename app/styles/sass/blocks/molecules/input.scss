@@ -1,0 +1,16 @@
+input {
+  &:focus {
+    outline: 2px solid #ffd124;
+  }
+  @include media-max(575) {
+    font-size: 14px;
+  }
+}
+.input {
+  background: #FAFAFA;
+  border: 1px solid #F3F3F3;
+  border-radius: 3px;
+  &::placeholder {
+    color: #717171;
+  }
+}

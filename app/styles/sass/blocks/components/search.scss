@@ -1,0 +1,40 @@
+.search {
+  form {
+    position: relative;
+    & > button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      width: 50px;
+      right: 0;
+      height: 100%;
+      border: none;
+      background: transparent;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  input {
+    height: 44px;
+    padding: 14px 40px 14px 14px;
+  }
+  .often {
+    span {
+      font-size: 13px;
+      line-height: 16px;
+      color: #9E9E9E;
+    }
+    a {
+      font-size: 13px;
+      color: #000000;
+      border-bottom: 1px dotted #000000;
+      &:not(:last-of-type) {
+        margin-right: 10px;
+      }
+    }
+  }
+}

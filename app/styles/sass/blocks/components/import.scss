@@ -1,0 +1,63 @@
+.import {
+  padding: 80px 0;
+  background: url("../images/dist/decoration/background-yellow2.jpg") no-repeat;
+  background-size: cover;
+  @include media-max(575) {
+    padding: 35px 0 50px;
+  }
+  .title {
+    display: block;
+    text-align: center;
+  }
+  .subtitle {
+    line-height: 44px;
+    display: block;
+    font-size: 26px;
+    text-align: center;
+    @include media-max(767) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  &-wrapper {
+    padding: 30px 30px 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 3px;
+    @include media-max(575) {
+      padding: 15px 10px 25px;
+    }
+  }
+  &-list {
+    margin: 28px -12px 0;
+    @include media-max(575) {
+      margin: 14px -7.5px 0;
+    }
+    li {
+      margin: 0 12px 5px;
+      width: calc(25% - 24px);
+      border-bottom: 1px solid #C0C0C0;
+      padding-bottom: 5px;
+      @include media-max(991) {
+        width: calc(33.3333% - 24px);
+      }
+      @include media-max(767) {
+        width: calc(50% - 24px);
+      }
+      @include media-max(575) {
+        width: calc(50% - 15px);
+        margin: 0 7.5px 5px;
+        font-size: 14px;
+      }
+      i {
+        margin-right: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        img {}
+      }
+      span {}
+    }
+  }
+}

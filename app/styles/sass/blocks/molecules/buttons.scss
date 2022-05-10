@@ -1,0 +1,32 @@
+.button {
+  background: #FFD200;
+  box-shadow: 0 4px 25px rgba(253, 108, 51, 0.4);
+  border-radius: 3px;
+  border: none;
+  span {
+    @include media-max(575) {
+      font-size: 14px;
+    }
+  }
+  @include media-max(575) {
+    font-size: 14px;
+  }
+  &-h60 {
+    height: 60px;
+    @include media-max(991) {
+      height: 16vw;
+    }
+  }
+}
+
+.button-secondary {
+  background: #FFFFFF;
+  border: 2px solid #FFD124;
+  border-radius: 3px;
+  &-h60 {
+    height: 60px;
+    @include media-max(991) {
+      height: 16vw;
+    }
+  }
+}

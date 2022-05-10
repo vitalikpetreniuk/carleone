@@ -1,0 +1,82 @@
+.worth {
+  line-height: 30px;
+  padding: 130px 0 80px;
+  background: url("../images/dist/decoration/background-yellow.jpg") no-repeat;
+  background-size: cover;
+  @include media-max(991) {
+    padding: 35px 0 30px;
+    line-height: 24px;
+  }
+  &-main {
+    width: 36%;
+    @include media-max(991) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    b {
+      display: inline-block;
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 70px;
+      margin-bottom: 20px;
+      @include media-max(575) {
+        margin-bottom: 10px;
+        font-size: 40px;
+        line-height: 48px;
+      }
+    }
+    p {
+      @include media-max(575) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-list {
+    width: 59%;
+    height: fit-content;
+    @include media-max(991) {
+      width: 100%;
+    }
+  }
+
+  &-element {
+    margin: 0 17px 15px 17px;
+    width: calc(50% - 34px);
+    @include media-max(991) {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+    &__head {
+      margin-bottom: 15px;
+      @include media-max(991) {
+        margin: 0 15px 0 0;
+        height: fit-content;
+      }
+      b {
+        margin-left: 20px;
+        font-weight: 600;
+        font-size: 26px;
+        @include media-max(991) {
+          display: none;
+        }
+      }
+    }
+    &__content {
+      b {
+        @include media-min(992) {
+          display: none;
+        }
+        @include media-max(575) {
+          font-size: 18px;
+        }
+      }
+      p {
+        @include media-max(575) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
