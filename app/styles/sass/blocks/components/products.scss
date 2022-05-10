@@ -1,0 +1,109 @@
+.products {
+  &-row {
+    margin-top: 18px;
+    & > div {
+      &:first-of-type {
+        width: 278px;
+        @include media-max(991) {
+          width: 0;
+        }
+      }
+    }
+    .manager {
+      margin-top: 40px;
+      @include media-max(991) {
+        display: none;
+      }
+    }
+  }
+
+
+
+  &-catalog {
+    height: fit-content;
+    margin-left: 23px;
+    @include media-max(991) {
+      margin-left: 0;
+    }
+    .card {
+      width: 25%;
+      @include media-max(1399) {
+        width: 50%;
+      }
+      &-image {
+        height: 160px;
+        @include media-max(1399) {
+          height: 290px;
+        }
+        @include media-max(1199) {
+          height: 230px;
+        }
+        @include media-max(767) {
+          height: 180px;
+        }
+        @include media-max(575) {
+          height: 33.33vw;
+        }
+      }
+      &:last-of-type {
+        border-right: 1px solid #FFD124;
+      }
+      &-info {
+        padding: 10px 9px 25px;
+        &__title {
+          font-size: 14px;
+        }
+        &__price2 div {
+          width: 100%;
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            @include media-max(575) {
+              font-size: 12px;
+            }
+          }
+          b {
+            @include media-max(575) {
+              font-size: 14px !important;
+            }
+          }
+        }
+        & > b {
+          margin-bottom: 10px;
+          font-weight: 600;
+          font-size: 14px;
+          text-align: center;
+          display: block;
+          @include media-max(575) {
+            line-height: 15px;
+          }
+        }
+        ul {
+          li {
+            font-size: 14px;
+            span {
+              margin-left: 3px;
+              line-height: 12px;
+            }
+            i {
+              padding: 6px;
+            }
+          }
+        }
+      }
+    }
+    & > .button {
+      margin: 35px auto 0;
+      padding: 16px 30px;
+      width: fit-content;
+      img {
+        margin-right: 11px;
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+
+
+}

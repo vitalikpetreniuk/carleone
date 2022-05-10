@@ -194,7 +194,7 @@
   </div>
   <i class="top-line bottom"></i>
 </div>
-<main class="main">
+<main class="page-category">
   <section class="breadcrumbs">
     <div class="container">
       <nav itemscope="" itemtype="https://schema.org/BreadcrumbList" aria-label="breadcrumb">
@@ -222,20 +222,1002 @@
   <section class="products">
     <div class="container">
       <b class="title">Авто Из США до $15000</b>
-      <div class="selected d-flex align-items-center">
+      <div class="selected d-flex flex-column flex-lg-row">
         <div class="d-flex align-items-center">
           <span>Вы выбрали:</span>
           <a href="#">Сбросить</a>
         </div>
-        <ul class="d-flex align-items-center">
-          <li>
+        <ul class="d-flex align-items-center flex-wrap">
+          <li class="d-flex align-items-center">
             <span>Цена до $15000</span>
             <a href="#">
-              <img src="" alt="">
+              <img src="images/dist/icons/close.svg" alt="">
             </a>
           </li>
         </ul>
       </div>
+      <div class="products-row d-flex">
+        <div class="d-lg-flex flex-column">
+          <form class="filter">
+            <div class="filter-block active">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Производитель</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+              <div class="filter-content">
+                <div class="filter-content__list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span>Audi</span>
+                        <i>(3)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>BMW</span>
+                        <i>(4)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Ford</span>
+                        <i>(39)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Volkswagen</span>
+                        <i>(15)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>Porshe</span>
+                        <i>(2)</i>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="more" href="#">Показать еще</a>
+                </div>
+              </div>
+            </div>
+            <div class="filter-block active">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Модель</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+              <div class="filter-content">
+                <div class="filter-content__list">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span>BMW 1</span>
+                        <i>(3)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>BMW 2</span>
+                        <i>(4)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>BMW 3</span>
+                        <i>(39)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>BMW 4</span>
+                        <i>(15)</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span>BMW 5</span>
+                        <i>(2)</i>
+                      </a>
+                    </li>
+                  </ul>
+                  <a class="more" href="#">Показать еще</a>
+                </div>
+              </div>
+            </div>
+            <div class="filter-block active">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Год</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+              <div class="filter-content">
+                <div class="filter-content__diapason">
+                  <select name="year" id="fromYear">
+                    <option value="default" hidden selected>От</option>
+                    <option value="1">1996</option>
+                    <option value="2">1997</option>
+                    <option value="3">1998</option>
+                  </select>
+                  <select name="year" id="toYear">
+                    <option value="default" hidden selected>До</option>
+                    <option value="1">2019</option>
+                    <option value="2">2020</option>
+                    <option value="3">2021</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="filter-block active">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Цена на авто в Украине</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+              <div class="filter-content cost">
+                <div class="filter-content__range">
+                  <input class="rangePrice" type="range" min="0" max="100" name="points" step="1" />
+                </div>
+                <div class="filter-content__diapason">
+                  <select name="prica" id="from">
+                    <option value="default" hidden selected>От</option>
+                    <option value="1">1000</option>
+                    <option value="2">2000</option>
+                    <option value="3">3000</option>
+                  </select>
+                  <select name="prica" id="toPrice">
+                    <option value="default" hidden selected>До</option>
+                    <option value="1">10000</option>
+                    <option value="2">15000</option>
+                    <option value="3">20000</option>
+                  </select>
+                </div>
+                <div class="filter-content__list">
+                  <span>Популярные ценовые варианты</span>
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span>Кроссоверы до 10000$</span>
+                        <i>(2)</i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-block">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Тип топлива</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+            </div>
+            <div class="filter-block">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Тип топлива</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+            </div>
+            <div class="filter-block">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Тип топлива</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+            </div>
+            <div class="filter-block">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Тип топлива</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+            </div>
+            <div class="filter-block">
+              <div class="filter-head d-flex justify-content-between align-items-center">
+                <span>Тип топлива</span>
+                <img src="images/dist/icons/arrows/arrow-nav-2.svg" alt="">
+              </div>
+            </div>
+
+            <div class="close d-flex d-lg-none justify-content-center align-items-center">
+              <img src="images/dist/icons/cross.svg" alt="">
+            </div>
+          </form>
+          <form class="manager d-lg-flex flex-column align-items-center">
+            <b>Помочь с выбором?</b>
+            <img src="images/dist/poster/manager.png" alt="">
+            <span>Наш менеджер Сергей онлайн и готов Вам помочь</span>
+            <div class="d-flex align-items-center">
+              <input type="text" placeholder="+38 ( 123 ) 45 67 890">
+              <button class="">Жду звонка</button>
+            </div>
+          </form>
+        </div>
+        <div class="products-catalog">
+          <div class="d-flex flex-wrap">
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card card-banner alternative d-flex flex-column justify-content-between">
+              <b class="name">Твой личный каталог в СМАРТФОНЕ</b>
+              <a href="#">Подробнее</a>
+              <img src="images/dist/poster/card-poster.png" alt="">
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card card-banner d-flex flex-column justify-content-between">
+              <b class="name">Привозим авто полностью под ключ</b>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/key-hand.svg" alt="">
+                  </i>
+                  <span>подбор</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/ship-white.svg" alt="">
+                  </i>
+                  <span>пригон</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/search-white.svg" alt="">
+                  </i>
+                  <span>помощь с доставкой и растаможкой</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/amo.svg" alt="">
+                  </i>
+                  <span>подбираем и доставляем запчасти</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/CTO-white.svg" alt="">
+                  </i>
+                  <span>ремонтируем на своем СТО</span>
+                </li>
+              </ul>
+              <div class="line"></div>
+              <p class="padding">
+                Вы ни очем не думаете <b>- просто забираете готовое авто</b>
+              </p>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card card-banner d-flex flex-column justify-content-between">
+              <b class="name">Авто из США</b>
+              <ul>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/money-pig-white.svg" alt="">
+                  </i>
+                  <span>20-50% экономии</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/zoom.svg" alt="">
+                  </i>
+                  <span>правдивая история по авто</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/car-check.svg" alt="">
+                  </i>
+                  <span>качественная сборка</span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="icon-black">
+                    <img src="images/dist/icons/speed.svg" alt="">
+                  </i>
+                  <span>честный пробег</span>
+                </li>
+              </ul>
+              <div class="line"></div>
+              <p>
+                <b>За 6 лет</b> мы <b>привезли более 2000 авто</b> среди которых 97% довольных клиентов
+              </p>
+              <img class="width-100" src="images/dist/poster/card-poster2.png" alt="">
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card card-banner alternative d-flex flex-column justify-content-between">
+              <b class="name">Твой личный каталог в СМАРТФОНЕ</b>
+              <a href="#">Подробнее</a>
+              <img src="images/dist/poster/card-poster.png" alt="">
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="card alt">
+              <div class="card-image">
+                <img src="images/dist/cars/passat.jpg" alt="">
+              </div>
+              <div class="card-info">
+                <span class="card-info__title">Volkswagen Passat B8</span>
+                <div class="card-info__age d-flex align-items-center justify-content-between">
+                  <span>2018</span>
+                  <div class="d-flex align-items-center">
+                    <img src="images/dist/icons/speedometer.svg" alt="">
+                    <span>102 726km</span>
+                  </div>
+                </div>
+                <ul class="d-flex flex-wrap">
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/fuel.svg" alt="">
+                    </i>
+                    <span>бензин</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/automat.svg" alt="">
+                    </i>
+                    <span>автомат</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/steering-wheel.svg" alt="">
+                    </i>
+                    <span>задний</span>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <i class="d-flex justify-content-center align-items-center">
+                      <img src="images/dist/icons/motor.svg" alt="">
+                    </i>
+                    <span>3.0 V6</span>
+                  </li>
+                </ul>
+                <div class="card-info__price2 d-flex justify-content-between align-items-center">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span>Цена в США:</span>
+                    <b>$12000</b>
+                  </div>
+                </div>
+                <b>Автомобиль под пригон</b>
+                <a href="#" class="button d-flex align-items-center justify-content-center">
+                  <span>Заказать</span>
+                </a>
+                <a href="#" class="button-secondary d-flex align-items-center justify-content-center">
+                  <span>Расчитать стоимость</span>
+                </a>
+                <div class="d-flex">
+                  <a class="link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="button d-flex align-items-center">
+            <img src="images/dist/icons/car.svg" alt="">
+            <span>Показать еще</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="advice d-flex d-lg-none">
+    <div class="container">
+      <form class="manager d-flex flex-column align-items-center">
+        <b>Помочь с выбором?</b>
+        <img src="images/dist/poster/manager.png" alt="">
+        <span>Наш менеджер Сергей онлайн и готов Вам помочь</span>
+        <div class="d-flex align-items-center">
+          <input type="text" placeholder="+38 ( 123 ) 45 67 890">
+          <button class="">Жду звонка</button>
+        </div>
+      </form>
     </div>
   </section>
   <section class="faq">
@@ -495,6 +1477,9 @@
 </form>
 <button class="button call-me d-lg-flex justify-content-center align-items-center">
   <img src="images/dist/icons/telephone.svg" alt="">
+</button>
+<button class="button btn-filter d-flex d-lg-none justify-content-center align-items-center">
+  <img src="images/dist/icons/filter.svg" alt="">
 </button>
 <div class="overlay"></div>
 <div class="overlay-2"></div>

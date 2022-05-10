@@ -265,4 +265,92 @@
       }
     }
   }
+  &-banner {
+    background: #FFD124;
+    &.alternative {
+      padding: 0 10px;
+    }
+    & > img {
+      &.width-100 {
+        width: 100%;
+      }
+      @include media-max(1399) {
+        object-fit: cover;
+        margin: 0 auto;
+        width: 70%;
+      }
+      @include media-max(767) {
+        width: auto;
+      }
+      @include media-max(575) {
+        width: 100%;
+      }
+    }
+    .name {
+      padding: 25px 10px 0;
+      display: block;
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 30px;
+      text-align: center;
+      @include media-max(575) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    a {
+      display: block;
+      text-align: center;
+      padding: 20px 10px;
+      background: #000000;
+      box-shadow: 0 4px 25px rgba(253, 108, 51, 0.25);
+      border-radius: 3px;
+      font-weight: 600;
+      line-height: 24px;
+      color: #FFF9F9;
+    }
+    ul {
+      padding: 0 10px;
+      li {
+        line-height: 20px;
+        @include media-max(575) {
+          font-size: 13px;
+        }
+        @include media-max(374) {
+          word-break: break-word;
+          font-size: 10px;
+          line-height: 13px;
+        }
+        &:not(:last-of-type) {
+          margin-bottom: 20px;
+        }
+        i {
+          margin-right: 15px;
+          @include media-max(575) {
+            margin-right: 10px;
+          }
+        }
+        span {}
+      }
+    }
+    .line {
+      position: relative;
+      background: url("../images/dist/decoration/line-card.svg");
+      width: 91%;
+      height: 4px;
+      margin: 0 auto;
+    }
+    p {
+      padding: 0 10px;
+      text-align: center;
+      @include media-max(575) {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      b {}
+      &.padding {
+        padding-bottom: 18px;
+      }
+    }
+  }
 }

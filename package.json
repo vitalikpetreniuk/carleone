@@ -44,6 +44,7 @@
 	},
 	"dependencies": {
 		"jquery": "^3.6.0",
+		"jquery-asRange": "^0.3.4",
 		"slick-carousel": "^1.8.1"
 	}
 }

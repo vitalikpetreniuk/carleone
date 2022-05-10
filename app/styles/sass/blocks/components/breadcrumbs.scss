@@ -1,6 +1,9 @@
 .breadcrumb {
   padding: 20px 0 15px;
   margin: 0;
+  @include media-max(991) {
+    padding: 15px 0 30px;
+  }
   &-item {
     &.active {
       color: #000000;
@@ -10,7 +13,9 @@
       line-height: 18px;
       color: #717171;
     }
-    span {}
+    span {
+      font-size: 14px;
+    }
     &+& {
       padding-left: 5px;
     }

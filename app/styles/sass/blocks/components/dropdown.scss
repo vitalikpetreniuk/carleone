@@ -3,3 +3,9 @@
     color: #ffd124 !important;
   }
 }
+
+.dropdown-item {
+  @include media-max(991) {
+    font-size: 16px;
+  }
+}

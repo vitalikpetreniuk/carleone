@@ -1,0 +1,135 @@
+.filter {
+  padding: 0 20px;
+  width: 278px;
+  background: #F6F6F6;
+  border-radius: 3px;
+  @include media-max(991) {
+    position: fixed;
+    overflow: auto;
+    max-height: 100vh;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    transition: .3s linear;
+  }
+  &.show {
+    left: 0;
+    .close {
+      position: fixed;
+      top: 13px;
+      left: 278px;
+      background: #EA4747;
+      border-radius: 0 3px 3px 0;
+      width: 40px;
+      height: 40px;
+      transition: .3s linear;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+  .close {
+    left: -100%;
+  }
+  &-block {
+    padding-bottom: 20px;
+    &:not(:last-of-type) {
+      border-bottom: 1px solid #E2E2E2;
+    }
+    &.active {
+      .filter {
+        &-head {
+          margin-bottom: 10px;
+          img {
+            transform: rotate(-180deg);
+          }
+        }
+      }
+    }
+  }
+  &-head {
+    padding-top: 20px;
+    cursor: pointer;
+    transition: .3s linear;
+    span {
+      font-weight: 800;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+    img {
+      width: 10px;
+      height: 7px;
+      transition: .3s linear;
+    }
+  }
+  &-content {
+    &:nth-of-type(1),
+    &:nth-of-type(2),
+    &:nth-of-type(3),
+    &:nth-of-type(4) {
+      display: block;
+    }
+    display: none;
+    &__list {
+      & > span {
+        margin-bottom: 5px;
+        display: inline-block;
+        line-height: 24px;
+        color: #717171;
+        font-size: 15px;
+      }
+      ul {
+        li {
+          font-size: 16px;
+          line-height: 30px;
+          a {
+            span {}
+            i {
+              font-style: normal;
+            }
+          }
+        }
+      }
+      .more {
+        display: inline-block;
+        line-height: 24px;
+        text-decoration-line: underline;
+        margin-top: 10px;
+      }
+    }
+    &__diapason {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      select {
+        padding: 0 5px 0 10px;
+        height: 40px;
+        background: #FFFFFF;
+        border-radius: 3px;
+        cursor: pointer;
+        border: none;
+        color: #717171;
+        width: 115px;
+        &:focus {
+          outline: 2px solid #ffd124;
+        }
+      }
+    }
+    &__range {
+      .asRange {
+        width: 100%;
+      }
+    }
+    &.cost {
+      .filter-content__range {
+        .asRange {
+          margin-bottom: 26px;
+        }
+      }
+      .filter-content__diapason {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

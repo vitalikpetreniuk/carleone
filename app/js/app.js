@@ -3,6 +3,7 @@
 
 // import './bootstrap-5-autocomplete/autocomplete.js'
 import 'slick-carousel'
+import 'jquery-asRange'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,8 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
         $('html, body').toggleClass('_over-hidden')
     })
 
-    $('.overlay').on('click', function () {
-        $('.nav-mobile, .overlay, .burger').removeClass('show')
+    $('.overlay, .filter .close').on('click', function () {
+        $('.nav-mobile, .overlay, .burger, .filter').removeClass('show')
         $('html, body').removeClass('_over-hidden')
     })
 
@@ -51,6 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault()
         $('.callback-popup, .overlay-2').removeClass('show')
         $('html, body').removeClass('_over-hidden')
+    })
+
+    $('.btn-filter').on('click', function () {
+        $('.filter, .overlay').addClass('show')
+        $('html, body').toggleClass('_over-hidden')
     })
 
     $('.videos-list').slick({
@@ -91,5 +97,28 @@ document.addEventListener('DOMContentLoaded', () => {
         $this.next().slideToggle()
 
     })
+
+
+    // Filter accordion
+    $('.filter-head').on('click', function (e) {
+        e.preventDefault()
+
+        const $this = $(this)
+
+        $this.parent().toggleClass('active')
+        $this.next().slideToggle()
+    })
+
+    // Input range
+    $('.rangePrice').asRange({
+        range: true,
+        limit: true,
+        min: 0,
+        max: 100,
+        value: 2,
+        tip: {
+            active: 'onMove'
+        }
+    });
 
 })

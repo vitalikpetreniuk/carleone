@@ -1,0 +1,29 @@
+.page-category {
+  .selected {
+    margin-top: 10px;
+    @include media-max(991) {
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  .title {
+    @include media-max(991) {
+      text-align: center;
+      display: block;
+    }
+  }
+  .advice {
+    @include media-max(991) {
+      padding: 50px 0 10px;
+    }
+    @include media-max(575) {
+      padding: 50px 0 30px;
+    }
+  }
+  .seo {
+    margin-top: 60px;
+    @include media-max(575) {
+      margin-top: 30px;
+    }
+  }
+}

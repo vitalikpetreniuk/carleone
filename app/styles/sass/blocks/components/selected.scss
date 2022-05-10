@@ -1,8 +1,14 @@
 .selected {
+  @include media-max(991) {
+    font-size: 14px;
+  }
   & > div {
+    margin-bottom: 10px;
+    flex-shrink: 0;
+    height: fit-content;
     span {}
     a {
-      margin-left: 10px;
+      margin: 0 5px 0 10px;
       background: #EA4747;
       border-radius: 3px;
       color: #FFFFFF;
@@ -12,10 +18,16 @@
   ul {
     li {
       padding: 5px 10px;
-      margin: 0 10px;
+      margin: 0 5px 10px;
       background: #F6F6F6;
       border-radius: 3px;
-      a {}
+      a {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 }
