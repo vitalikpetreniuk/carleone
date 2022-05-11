@@ -121,4 +121,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.slider-nav'
+    });
+
+    $('.slider-nav').slick({
+        arrows: false,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        asNavFor: '.slider-for',
+        focusOnSelect: true,
+    });
+
+
 })

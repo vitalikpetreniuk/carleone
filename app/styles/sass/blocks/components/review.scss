@@ -1,0 +1,61 @@
+.review {
+  &-slider {
+    max-width:574px;
+    width: 100%;
+    display:block;
+  }
+  &-info {
+    &__head {
+      & > span {}
+      & > div {
+        img {}
+        span {}
+      }
+    }
+    &__type {
+      ul {
+        li {
+          b {}
+          span {}
+        }
+      }
+    }
+    &__name {
+      b {}
+    }
+    &__rating {
+      ul {
+        li {
+          svg {}
+        }
+      }
+      a {}
+    }
+    &__block {
+      .mini-container {
+        .head-block {
+
+        }
+        .button {}
+        form {
+          input {}
+          button {}
+        }
+      }
+      & > ul {
+        li {
+          a {
+            svg {}
+            span {}
+          }
+        }
+      }
+    }
+  }
+  &-nav {
+    a {
+      img {}
+      span {}
+    }
+  }
+}
