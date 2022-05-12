@@ -1,0 +1,51 @@
+.page-product {
+  .catalog {
+    padding-top: 45px;
+    background: #F6F6F6;
+    @include media-max(575) {
+      padding-top: 35px;
+    }
+    .title {
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 32px;
+      text-align: start;
+      margin-bottom: 0;
+    }
+    &-head {
+      margin-bottom: 20px;
+    }
+    .card {
+      &-info {
+        &__price2 div {
+          width: 100%;
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            @include media-max(575) {
+              font-size: 12px;
+            }
+          }
+          b {
+            @include media-max(575) {
+              font-size: 14px !important;
+            }
+          }
+        }
+        & > b {
+          margin-bottom: 10px;
+          font-weight: 600;
+          font-size: 14px;
+          text-align: center;
+          display: block;
+          @include media-max(575) {
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+  .seo {
+    background: #FFFFFF;
+  }
+}

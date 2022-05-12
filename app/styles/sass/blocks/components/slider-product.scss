@@ -1,4 +1,9 @@
 .slider-for{
+  border-radius: 3px;
+  margin-bottom: 10px;
+  @include media-max(575) {
+    margin-bottom: 5px;
+  }
   img{
     width:100%;
   }
@@ -6,6 +11,9 @@
 
 .slider-nav{
   margin: 0 -8px;
+  @include media-max(991) {
+    margin: 0 -4px;
+  }
   img{
     width: 100% !important;
     height: 100%;
@@ -23,6 +31,16 @@
     padding: 5px;
     cursor: pointer;
     margin: 0 8px 16px;
+    @include media-max(991) {
+      width: calc(20% - 8px) !important;
+      margin: 0 4px 8px;
+    }
+    @include media-max(575) {
+      width: calc(25% - 8px) !important;
+    }
+    @include media-max(420) {
+      height: 65px;
+    }
     img {
       position: absolute;
       top: 0;

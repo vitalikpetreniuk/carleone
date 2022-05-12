@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    $('#callMeBack, .call-me, .card-info > .button:first-of-type').on('click', function (e) {
+    $('#callMeBack, .call-me, .card-info > .button:first-of-type, #openPopup, #calculateTheCost').on('click', function (e) {
         e.preventDefault()
         $('.callback-popup, .overlay-2').toggleClass('show')
         $('html, body').toggleClass('_over-hidden')
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         $('html, body').toggleClass('_over-hidden')
     })
 
-    $('.videos-list').slick({
+    $('#mainVideos').slick({
         infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -71,6 +71,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     slidesToScroll: 1,
                 }
             },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
+    })
+    $('#productVideos').slick({
+        infinite: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        responsive: [
             {
                 breakpoint: 576,
                 settings: {
@@ -135,6 +149,12 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesToScroll: 1,
         asNavFor: '.slider-for',
         focusOnSelect: true,
+    });
+
+    $('ul.inset__caption').on('click', 'li:not(.active)', function() {
+        $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('div.inset__wrapper').find('div.inset__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 
 
