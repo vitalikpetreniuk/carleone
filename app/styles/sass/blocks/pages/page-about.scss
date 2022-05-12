@@ -1,0 +1,14 @@
+.page-about {
+  .breadcrumbs {
+    .breadcrumb {
+      @include media-max(575) {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .consultation {
+    @include media-max(575) {
+      padding-top: 50px;
+    }
+  }
+}

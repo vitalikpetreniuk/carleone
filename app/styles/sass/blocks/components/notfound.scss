@@ -1,0 +1,32 @@
+.notfound {
+  padding: 2vw 0;
+  @include media-max(575) {
+    padding: 3vw 0;
+  }
+  &-wrapper {
+    b {
+      line-height: 10vw;
+      font-size: 10vw;
+      @include media-max(575) {
+        line-height: 15vw;
+        font-size: 15vw;
+      }
+    }
+    span {
+      margin: 2vw 0;
+      font-size: 2vw;
+      font-weight: 600;
+      @include media-max(575) {
+        font-size: 3vw;
+        margin: 5vw 0;
+      }
+    }
+    a {
+      font-weight: 600;
+      padding: 20px 15px;
+      @include media-max(575) {
+        padding: 10px;
+      }
+    }
+  }
+}

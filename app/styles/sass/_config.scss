@@ -91,6 +91,12 @@ body {
 	overflow-x: hidden;
 	background: #FFFFFF;
 	font-weight: 400;
+	&.not-found {
+		height: 100vh;
+		main {
+			height: 100%;
+		}
+	}
 }
 
 ._over-hidden {

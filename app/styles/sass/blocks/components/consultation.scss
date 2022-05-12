@@ -68,6 +68,9 @@
     line-height: 30px;
     color: #FFFFFF;
     margin-bottom: 19px;
+    @include media-max(575) {
+      font-size: 18px;
+    }
     span {
       color: #FFD124;
     }
