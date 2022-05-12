@@ -1,9 +1,9 @@
 .footer {
   background: #0E131E;
   color: #FFFFFF;
-  padding: 26px 0 40px;
+  padding: 26px 0 calc(40px + 77px);
   @include media-max(575) {
-    padding: 35px 0 30px;
+    padding: 35px 0 calc(30px + 77px);
   }
   a {
     color: #FFFFFF;

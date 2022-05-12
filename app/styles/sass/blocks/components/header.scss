@@ -41,5 +41,20 @@
       border-bottom: 2px dotted #FFC400;
     }
   }
+  &-button {
+    margin-right: 24px;
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #FFD124;
+      padding: 6px;
+      width: 26px;
+      height: 26px;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+    }
+  }
   &-burger {}
 }

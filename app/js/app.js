@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         maximumItems: 10
     });
 
-    $('.burger').on('click', function () {
+    $('.burger, .header-button').on('click', function () {
         $('.nav-mobile, .overlay, .burger').toggleClass('show')
         $('html, body').toggleClass('_over-hidden')
     })
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    $('#callMeBack, .call-me, .card-info > .button:first-of-type, #openPopup, #calculateTheCost').on('click', function (e) {
+    $('#callMeBack, .call-me, .card-info > .button:first-of-type, .page-category .card-info > .button-secondary, .page-product .card-info > .button-secondary, #openPopup, #calculateTheCost').on('click', function (e) {
         e.preventDefault()
         $('.callback-popup, .overlay-2').toggleClass('show')
         $('html, body').toggleClass('_over-hidden')
@@ -140,6 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
+        infinite: true,
         asNavFor: '.slider-nav'
     });
 
