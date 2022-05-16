@@ -93,11 +93,17 @@
       }
     }
     & > .button {
+      justify-content: center;
+      min-width: 278px;
       margin: 35px auto 0;
-      padding: 16px 30px;
+      padding: 12px 30px;
       width: fit-content;
+      @include media-max(575) {
+        min-width: auto;
+      }
       img {
         margin-right: 11px;
+        margin-bottom: 8px;
       }
       span {
         font-weight: 600;

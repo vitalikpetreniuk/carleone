@@ -5,7 +5,7 @@
   }
   .container {
     & > .button {
-      padding: 16px 30px;
+      padding: 12px 30px;
       margin: 0 auto;
       width: fit-content;
       @include media-max(991) {
@@ -17,6 +17,7 @@
       }
       img {
         margin-right: 11px;
+        margin-bottom: 8px;
         width: 33px;
         height: 33px;
         @include media-max(991) {

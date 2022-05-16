@@ -1,10 +1,26 @@
 .videos {
   padding: 50px 0 80px;
   background: #F6F6F6;
+  position: relative;
   @include media-max(575) {
     padding: 50px 0;
   }
+  &::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: block;
+    background: #FFFFFF;
+    @include media-max(991) {
+      display: none;
+    }
+  }
   .title {
+    z-index: 1;
+    position: relative;
     display: block;
     text-align: center;
     margin-bottom: 55px;
@@ -44,5 +60,44 @@
     @include media-max(575) {
       right: 10px;
     }
+  }
+}
+
+
+
+
+
+.slick-arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(3px);
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    background: url("../images/dist/icons/arrows/arrow-slider.svg") no-repeat;
+  }
+  &:hover,
+  &:focus {
+    background: #FFD124;
+  }
+}
+.slick-next {
+  &::before {
+    transform: rotate(-180deg) translate(50%, 50%);
+  }
+}
+.slick-disabled {
+  background: rgba(255, 255, 255, 0.9);
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.9);
   }
 }

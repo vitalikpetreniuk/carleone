@@ -77,8 +77,9 @@
       }
     }
     .button {
+      font-weight: 600;
       width: fit-content;
-      padding: 20px;
+      padding: 12px 20px;
       @include media-max(991) {
         margin: 0 auto;
       }
@@ -89,6 +90,7 @@
         width: 33px;
         height: 33px;
         margin-right: 11px;
+        margin-bottom: 8px;
       }
       span {
         @include media-max(575) {

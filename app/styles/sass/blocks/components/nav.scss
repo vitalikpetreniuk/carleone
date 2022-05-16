@@ -1,5 +1,5 @@
 .nav {
-  padding: 20px 0;
+  padding: 16px 0 0;
   background: #FFD124;
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.03);
   @include media-max(991) {
@@ -8,18 +8,20 @@
   nav {
     ul {
       margin: 0 -10px;
+      z-index: 2;
+      position: relative;
       li {
         cursor: pointer;
         position: relative;
         margin: 0 10px;
         &.drop {
           padding-right: 14px;
+          padding-bottom: 16px;
           &::before {
             content: '';
             position: absolute;
             right: 0;
-            top: 50%;
-            transform: translate(0, -50%);
+            top: 24%;
             display: block;
             width: 10px;
             height: 5.8px;
@@ -33,7 +35,6 @@
             }
             &::before {
               transform: rotate(-180deg);
-              top: 40%;
             }
           }
         }
@@ -42,11 +43,11 @@
           padding: 30px 40px;
           position: absolute;
           background: #FFFFFF;
-          width: 100%;
           min-width: fit-content;
           box-shadow: 0 4px 40px rgba(0, 0, 0, 0.03);
           transform: scale(0);
           transition: .3s;
+          top: 100%;
           li {
             margin: 0;
             &:not(:last-of-type) {

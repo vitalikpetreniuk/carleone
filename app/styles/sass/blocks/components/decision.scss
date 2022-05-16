@@ -151,7 +151,7 @@
         min-width: 294px;
         width: fit-content;
         margin: 10px auto 0;
-        padding: 15px;
+        padding: 12px 15px;
         @include media-max(767) {
           margin: 20px auto 0;
         }
@@ -160,6 +160,7 @@
         }
         img {
           margin-right: 11px;
+          margin-bottom: 8px;
         }
         span {
           font-size: 16px;
