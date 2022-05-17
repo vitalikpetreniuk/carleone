@@ -1,0 +1,15 @@
+.dignity {
+  background: #f6f6f6;
+  padding-top: 50px;
+  @include media-max(575) {
+    padding-top: 35px;
+  }
+  .title {
+    margin-bottom: 35px;
+    display: block;
+    text-align: center;
+    @include media-max(575) {
+      margin-bottom: 20px;
+    }
+  }
+}

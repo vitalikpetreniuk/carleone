@@ -6,6 +6,9 @@
     }
     &.alt {
       margin: 0;
+      @include media-max(575) {
+        padding-top: 30px;
+      }
     }
   }
   .press {
@@ -17,6 +20,11 @@
     margin-bottom: 40px;
     @include media-max(575) {
       margin-bottom: 30px;
+    }
+  }
+  .consultation {
+    @include media-max(575) {
+      padding-top: 0;
     }
   }
 }
