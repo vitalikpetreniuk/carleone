@@ -4,6 +4,7 @@
 // import './bootstrap-5-autocomplete/autocomplete.js'
 import 'slick-carousel'
 import 'jquery-asRange'
+import lightbox from 'lightbox2'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -140,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
-        infinite: true,
+        infinite: false,
         asNavFor: '.slider-nav'
     });
 
@@ -174,5 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
         return false;
     });
 
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true,
+        'disableScrolling': true
+    })
 
 })
