@@ -5,6 +5,7 @@
 import 'slick-carousel'
 import 'jquery-asRange'
 import lightbox from 'lightbox2'
+import Typed from "typed.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -180,5 +181,16 @@ document.addEventListener('DOMContentLoaded', () => {
         'wrapAround': true,
         'disableScrolling': true
     })
+
+    const typed = new Typed('#typing', {
+        strings: ["США", "Канады", "Кореи", "Китая"],
+        typeSpeed: 150,
+        backSpeed: 70,
+        backDelay: 2500,
+        startDelay: 100,
+        loop: true,
+        loopCount: 'infinite',
+        contentType: 'html',
+    });
 
 })

@@ -46,6 +46,7 @@
 		"jquery": "^3.6.0",
 		"jquery-asRange": "^0.3.4",
 		"lightbox2": "^2.11.3",
-		"slick-carousel": "^1.8.1"
+		"slick-carousel": "^1.8.1",
+		"typed.js": "^2.0.12"
 	}
 }
