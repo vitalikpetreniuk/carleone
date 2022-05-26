@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const typed = new Typed('#typing', {
-        strings: ["США", "Канады", "Кореи", "Китая"],
+        strings: $('#typing-country')[0].textContent.split(','),
         typeSpeed: 150,
         backSpeed: 70,
         backDelay: 2500,
