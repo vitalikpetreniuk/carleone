@@ -23,12 +23,16 @@
     height: fit-content;
     margin-left: 23px;
     @include media-max(991) {
-      margin-left: 0;
+      margin: 0 -2.5px;
     }
     .card {
       width: 25%;
       @include media-max(1399) {
         width: 50%;
+      }
+      @include media-max(991) {
+        width: calc(50% - 5px);
+        margin: 0 2.5px 15px;
       }
       &-image {
         height: 160px;

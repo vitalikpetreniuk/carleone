@@ -67,6 +67,10 @@ ul {
 	padding: 0;
 }
 
+marquee {
+	width: 100%;
+}
+
 a {
 	text-decoration: none;
 	color: $textcolor;
@@ -79,6 +83,10 @@ button {
 	@include media-max(991) {
 		font-size: 3.73vw;
 	}
+}
+
+html {
+	overflow-x: hidden;
 }
 
 body {
