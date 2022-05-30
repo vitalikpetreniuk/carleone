@@ -182,15 +182,17 @@ document.addEventListener('DOMContentLoaded', () => {
         'disableScrolling': true
     })
 
-    const typed = new Typed('#typing', {
-        strings: $('#typing-country')[0].textContent.split(','),
-        typeSpeed: 150,
-        backSpeed: 70,
-        backDelay: 2500,
-        startDelay: 100,
-        loop: true,
-        loopCount: 'infinite',
-        contentType: 'html',
-    });
+    if ($('#typing').length) {
+        const typed = new Typed('#typing', {
+            strings: $('#typing-country')[0].textContent.split(','),
+            typeSpeed: 150,
+            backSpeed: 70,
+            backDelay: 2500,
+            startDelay: 100,
+            loop: true,
+            loopCount: 'infinite',
+            contentType: 'html',
+        });
+    }
 
 })

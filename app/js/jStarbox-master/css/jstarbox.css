@@ -1,0 +1,48 @@
+.positioner {
+	position: relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+.starbox .colorbar,
+.starbox .ghost {
+	z-index: 0;
+	position: absolute;
+	max-width: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.starbox .stars {
+	display: inline-block;
+}
+
+.starbox .stars .star_holder {
+	position: relative;
+	z-index: 1;
+}
+
+.starbox .stars .star_holder .star {
+	display: inline-block;
+	vertical-align: baseline;
+	background-repeat: no-repeat;
+}
+
+
+/* Override with your own image and size… */
+.starbox .stars .star_holder .star {
+	background-image: url('../images/fire.png');
+	width: 23px;
+	height: 22px;
+}
+
+/* Override with your own colours… */
+.starbox .stars { background: #000000; }
+.starbox .rated .stars { background: #000000; }
+.starbox .rated.hover .stars { background: #cccccc; }
+.starbox .colorbar { background: #FFD124; }
+.starbox .hover .colorbar { background: #FFD124; }
+.starbox .rated .colorbar { background: #FFD124; }
+.starbox .rated.hover .colorbar { background: #1e90ff; }
+.starbox .ghost { background: #a1a1a1; }
