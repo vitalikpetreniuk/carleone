@@ -195,4 +195,18 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    $('.tabs li').on('click', function (e) {
+        e.preventDefault()
+        $('.tabs li').removeClass('active')
+        let brand_id = $(this).attr('id');
+        if (brand_id !== 'all') {
+            $(this).addClass('active');
+            $('.catalog-list.split .card').removeClass('hidden');
+            $('.catalog-list.split .card').not('.'+brand_id).addClass('hidden');
+        } else {
+            $(this).addClass('active');
+            $('.catalog-list.split .card').removeClass('hidden')
+        }
+    })
+
 })
