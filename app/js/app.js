@@ -195,10 +195,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    let brand_id
+
     $('.tabs li').on('click', function (e) {
         e.preventDefault()
         $('.tabs li').removeClass('active')
-        let brand_id = $(this).attr('id');
+        brand_id = $(this).attr('id');
         if (brand_id !== 'all') {
             $(this).addClass('active');
             $('.catalog-list.split .card').removeClass('hidden');
@@ -209,4 +211,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    $('.choice-list__element').on('click', function (e) {
+        e.preventDefault()
+        let type_car = $(this).attr('id');
+        if (type_car !== 'all') {
+            $('.catalog-list.split .card').removeClass('hidden');
+            $('.catalog-list.split .card').not('.'+type_car).addClass('hidden');
+        } else {
+            $('.catalog-list.split .card').removeClass('hidden')
+        }
+    })
 })
