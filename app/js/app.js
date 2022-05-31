@@ -213,12 +213,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('.choice-list__element').on('click', function (e) {
         e.preventDefault()
+        $('.tabs li').removeClass('active')
         let type_car = $(this).attr('id');
-        if (type_car !== 'all') {
-            $('.catalog-list.split .card').removeClass('hidden');
-            $('.catalog-list.split .card').not('.'+type_car).addClass('hidden');
-        } else {
-            $('.catalog-list.split .card').removeClass('hidden')
-        }
+        $('.catalog-list.split .card').removeClass('hidden');
+        $('.catalog-list.split .card').not('.'+type_car).addClass('hidden');
+    })
+
+    $('.choice-list__element a').on('click', function () {
+        let href = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(href).offset().top
+        }, {
+            duration: 0,
+            easing: "linear"
+        });
     })
 })
