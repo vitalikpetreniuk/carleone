@@ -207,7 +207,7 @@
       </div>
       <div class="products-row d-flex">
         <div class="d-lg-flex flex-column">
-          <form class="filter">
+          <div class="filter">
             <div class="filter-block active">
               <div class="filter-head d-flex justify-content-between align-items-center">
                 <span>Производитель</span>
@@ -314,8 +314,7 @@
                     <option value="3">2021</option>
                   </select>
                 </div>
-                <button type="submit" class="filter-content__button button d-flex justify-content-center align-items-center">Применить</button>
-                <input type="hidden">
+                <a id="sendYear" href="#" class="filter-content__button button d-flex justify-content-center align-items-center">Применить</a>
               </div>
             </div>
             <div class="filter-block active">
@@ -326,24 +325,9 @@
               <div class="filter-content cost">
                 <div class="filter-content__range">
                   <input type="hidden" class="slider-range" value="0,100" />
-                  <input type="hidden" id="maxValueRange" value="500">
+                  <input type="hidden" id="maxValueRange" value="100">
                 </div>
-                <div class="filter-content__diapason">
-                  <select name="prica" id="from">
-                    <option value="default" hidden selected>От</option>
-                    <option value="1">1000</option>
-                    <option value="2">2000</option>
-                    <option value="3">3000</option>
-                  </select>
-                  <select name="prica" id="toPrice">
-                    <option value="default" hidden selected>До</option>
-                    <option value="1">10000</option>
-                    <option value="2">15000</option>
-                    <option value="3">20000</option>
-                  </select>
-                </div>
-                <button type="submit" class="filter-content__button button d-flex justify-content-center align-items-center">Применить</button>
-                <input type="hidden">
+                <a id="sendPrice" href="#" class="filter-content__button button d-flex justify-content-center align-items-center">Применить</a>
                 <div class="filter-content__list">
                   <span>Популярные ценовые варианты</span>
                   <ul>
@@ -355,6 +339,20 @@
                     </li>
                   </ul>
                 </div>
+<!--                <div class="filter-content__diapason">-->
+<!--                  <select name="prica" id="from">-->
+<!--                    <option value="default" hidden selected>От</option>-->
+<!--                    <option value="1">1000</option>-->
+<!--                    <option value="2">2000</option>-->
+<!--                    <option value="3">3000</option>-->
+<!--                  </select>-->
+<!--                  <select name="prica" id="toPrice">-->
+<!--                    <option value="default" hidden selected>До</option>-->
+<!--                    <option value="1">10000</option>-->
+<!--                    <option value="2">15000</option>-->
+<!--                    <option value="3">20000</option>-->
+<!--                  </select>-->
+<!--                </div>-->
               </div>
             </div>
 
@@ -392,7 +390,7 @@
             <span class="close d-flex d-lg-none justify-content-center align-items-center">
               <img src="images/dist/icons/cross.svg" alt="">
             </span>
-          </form>
+          </div>
           <form class="manager d-lg-flex flex-column align-items-center">
             <b>Помочь с выбором?</b>
             <img src="images/dist/poster/manager.png" alt="">

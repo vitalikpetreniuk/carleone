@@ -137,11 +137,21 @@ document.addEventListener('DOMContentLoaded', () => {
         isRange : true
     })
 
+    $('#fromYear').on('change', function () {
+        $('#sendYear').attr('href', $(this).val() + '-' + $('#toYear').val())
+    })
+    $('#toYear').on('change', function () {
+        $('#sendYear').attr('href', $('#fromYear').val() + '-' + $(this).val())
+    })
+
+    $('#sendPrice').attr('href', $('.slider-range').val())
+
     $('.slider-range').on('change', function () {
-        $('#from option[selected]').text($('.slider-range').val().split(',')[0])
-        $('#toPrice option[selected]').text($('.slider-range').val().split(',')[1])
-        $("#from").val($("#from option:first").val());
-        $("#toPrice").val($("#toPrice option:first").val());
+        $('#sendPrice').attr('href', $('.slider-range').val())
+        // $('#from option[selected]').text($('.slider-range').val().split(',')[0])
+        // $('#toPrice option[selected]').text($('.slider-range').val().split(',')[1])
+        // $("#from").val($("#from option:first").val());
+        // $("#toPrice").val($("#toPrice option:first").val());
     })
 
     // Custom Starbox
