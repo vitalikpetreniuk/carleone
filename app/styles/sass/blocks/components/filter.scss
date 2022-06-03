@@ -71,6 +71,13 @@
       display: block;
     }
     display: none;
+    &__button {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      margin-top: 10px;
+      box-shadow: none !important;
+    }
     &__list {
       & > span {
         margin-bottom: 5px;
@@ -123,9 +130,7 @@
     }
     &.cost {
       .filter-content__range {
-        .asRange {
-          margin-bottom: 26px;
-        }
+        margin: 26px 0;
       }
       .filter-content__diapason {
         margin-bottom: 20px;

@@ -1,0 +1,24 @@
+.theme-green .back-bar {
+  background: #cfcdc7 none;
+}
+.back-bar {
+  height: 3px !important;
+}
+.theme-green .back-bar .pointer {
+  background: #ffd200 none;
+  border: 3px solid #FFFFFF;
+}
+.theme-green .back-bar .selected-bar {
+  background: #ffd200 none;
+}
+.slider-container .back-bar .pointer {
+  cursor: pointer;
+}
+
+//.slider-container .scale {
+//  span {
+//    &:last-of-type {
+//      left: 97% !important;
+//    }
+//  }
+//}

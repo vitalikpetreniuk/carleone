@@ -3,9 +3,10 @@
 
 // import './bootstrap-5-autocomplete/autocomplete.js'
 import 'slick-carousel'
-import 'jquery-asRange'
 import lightbox from 'lightbox2'
 import Typed from "typed.js";
+import '../js/jRange-master/jquery.range.js'
+import '../js/jStarbox-master/jstarbox.js'
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -126,16 +127,37 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // Input range
-    $('.rangePrice').asRange({
-        range: true,
-        limit: true,
-        min: 0,
-        max: 100,
-        value: 2,
-        tip: {
-            active: 'onMove'
+    $('.slider-range').jRange({
+        from: 0,
+        to: $('#maxValueRange').val(),
+        step: 1,
+        format: '%s',
+        width: 238,
+        showLabels: true,
+        isRange : true
+    })
+
+    $('.slider-range').on('change', function () {
+        $('#from option[selected]').text($('.slider-range').val().split(',')[0])
+        $('#toPrice option[selected]').text($('.slider-range').val().split(',')[1])
+        $("#from").val($("#from option:first").val());
+        $("#toPrice").val($("#toPrice option:first").val());
+    })
+
+    // Custom Starbox
+    if ($('#customStarts').length) {
+        $('#customStarts').starbox({
+            stars: 5,
+            buttons: 10,
+            changeable: 'once',
+            autoUpdateAverage: true,
+        })
+        if (localStorage.getItem('post_')) {
+            $('#customStarts').starbox("setValue", localStorage.getItem('post_'));
+        }else {
+            $('#customStarts').starbox("setValue", ($('#customStarts').attr("data-rate")));
         }
-    });
+    }
 
 
     $('.slider-for').slick({
