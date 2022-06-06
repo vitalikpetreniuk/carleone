@@ -123,7 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const $this = $(this)
 
         $this.parent().toggleClass('active')
-        $this.next().slideToggle()
+        // $this.next().slideToggle()
+        $this.next().toggleClass('active')
     })
 
     // Input range
