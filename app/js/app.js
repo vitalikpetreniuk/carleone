@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Input range
     $('.slider-range').jRange({
-        from: 0,
+        from: $('#minValueRange').val(),
         to: $('#maxValueRange').val(),
         step: 1,
         format: '%s',
