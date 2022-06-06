@@ -145,10 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
         $('#sendYear').attr('href', $('#fromYear').val() + '-' + $(this).val() + '/')
     })
 
-    $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val() + '/')
+    $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val().replace(',', '-') + '/')
 
     $('.slider-range').on('change', function () {
-        $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val() + '/')
+        $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val().replace(',', '-') + '/')
         // $('#from option[selected]').text($('.slider-range').val().split(',')[0])
         // $('#toPrice option[selected]').text($('.slider-range').val().split(',')[1])
         // $("#from").val($("#from option:first").val());
