@@ -128,32 +128,34 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     // Input range
-    $('.slider-range').jRange({
-        from: $('#minValueRange').val(),
-        to: $('#maxValueRange').val(),
-        step: 1,
-        format: '%s',
-        width: 238,
-        showLabels: true,
-        isRange : true
-    })
+    if ($('.slider-range').length) {
+        $('.slider-range').jRange({
+            from: $('#minValueRange').val(),
+            to: $('#maxValueRange').val(),
+            step: 1,
+            format: '%s',
+            width: 238,
+            showLabels: true,
+            isRange : true
+        })
 
-    $('#fromYear').on('change', function () {
-        $('#sendYear').attr('href', $(this).val() + '-' + $('#toYear').val() + '/')
-    })
-    $('#toYear').on('change', function () {
-        $('#sendYear').attr('href', $('#fromYear').val() + '-' + $(this).val() + '/')
-    })
+        $('#fromYear').on('change', function () {
+            $('#sendYear').attr('href', $(this).val() + '-' + $('#toYear').val() + '/')
+        })
+        $('#toYear').on('change', function () {
+            $('#sendYear').attr('href', $('#fromYear').val() + '-' + $(this).val() + '/')
+        })
 
-    $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val().replace(',', '-') + '/')
-
-    $('.slider-range').on('change', function () {
         $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val().replace(',', '-') + '/')
-        // $('#from option[selected]').text($('.slider-range').val().split(',')[0])
-        // $('#toPrice option[selected]').text($('.slider-range').val().split(',')[1])
-        // $("#from").val($("#from option:first").val());
-        // $("#toPrice").val($("#toPrice option:first").val());
-    })
+
+        $('.slider-range').on('change', function () {
+            $('#sendPrice').attr('href', $('#urlRange').val() + $('.slider-range').val().replace(',', '-') + '/')
+            // $('#from option[selected]').text($('.slider-range').val().split(',')[0])
+            // $('#toPrice option[selected]').text($('.slider-range').val().split(',')[1])
+            // $("#from").val($("#from option:first").val());
+            // $("#toPrice").val($("#toPrice option:first").val());
+        })
+    }
 
     // Custom Starbox
     if ($('#customStarts').length) {
