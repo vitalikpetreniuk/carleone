@@ -35,7 +35,7 @@
       @include media-max(575) {
         height: 53.33vw;
       }
-      img {
+      iframe, img {
         object-fit: cover;
         width: calc(100% - 20px);
         margin: 0 auto;
