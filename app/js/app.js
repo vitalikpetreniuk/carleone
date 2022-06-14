@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    $('#callMeBack, .call-me, .card-info > .button:first-of-type, .page-category .card-info > .button-secondary, .page-product .card-info > .button-secondary, #openPopup, #calculateTheCost').on('click', function (e) {
+    $('#callMeBack, .call-me, .card-info .open-popup, .card-info > .button:first-of-type, .page-category .card-info > .button-secondary, .page-product .card-info > .button-secondary, #openPopup, #calculateTheCost').on('click', function (e) {
         e.preventDefault()
         $('.callback-popup, .overlay-2').toggleClass('show')
         $('html, body').toggleClass('_over-hidden')
