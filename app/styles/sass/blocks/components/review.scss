@@ -12,6 +12,11 @@
     margin-left: 33px;
     max-width: 561px;
     width: 100%;
+    & > div {
+      @include media-min(992) {
+        position: fixed;
+      }
+    }
     @include media-max(1199) {
       margin-left: 15px;
     }
