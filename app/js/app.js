@@ -53,7 +53,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     $('.callback-popup .close, .overlay-2').on('click', function (e) {
         e.preventDefault()
-        $('.callback-popup, .overlay-2').removeClass('show')
+        $('.callback-popup, .overlay-2, .callback-popup-package').removeClass('show')
+        $('html, body').removeClass('_over-hidden')
+    })
+
+    $('.price-card > a').on('click', function (e) {
+        e.preventDefault()
+        $('.callback-popup-package, .overlay-2').toggleClass('show')
+        $('html, body').toggleClass('_over-hidden')
+        let namePackage = $(this).attr('data-package')
+        $('.callback-popup-package > input[type="hidden"]').attr('value', namePackage)
+    })
+
+    $('.callback-popup-package .close').on('click', function (e) {
+        e.preventDefault()
+        $('.callback-popup-package, .overlay-2').removeClass('show')
         $('html, body').removeClass('_over-hidden')
     })
 
@@ -264,4 +278,20 @@ document.addEventListener('DOMContentLoaded', () => {
             easing: "linear"
         });
     })
+
+
+
+    const reviewInfo = $('.review-info > div')
+    const scrollChange = 280
+
+    $(window).scroll(function () {
+        let scroll = $(window).scrollTop();
+
+        if (scroll > scrollChange) {
+            reviewInfo.addClass('fixed')
+        } else {
+            reviewInfo.removeClass('fixed')
+        }
+    })
+
 })

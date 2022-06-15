@@ -13,8 +13,11 @@
     max-width: 561px;
     width: 100%;
     & > div {
-      @include media-min(992) {
-        position: fixed;
+      &.fixed {
+        @include media-min(992) {
+          position: fixed;
+          top: 0;
+        }
       }
     }
     @include media-max(1199) {
