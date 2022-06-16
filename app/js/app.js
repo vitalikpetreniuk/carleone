@@ -172,17 +172,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Custom Starbox
-    if ($('#customStarts').length) {
-        $('#customStarts').starbox({
+    if ($('.customStarts, .customStarts2').length) {
+        $('.customStarts, .customStarts2').starbox({
             stars: 5,
             buttons: 10,
             changeable: 'once',
             autoUpdateAverage: true,
         })
         if (localStorage.getItem('post_')) {
-            $('#customStarts').starbox("setValue", localStorage.getItem('post_'));
+            $('.customStarts, .customStarts2').starbox("setValue", localStorage.getItem('post_'));
         }else {
-            $('#customStarts').starbox("setValue", ($('#customStarts').attr("data-rate")));
+            $('.customStarts, .customStarts2').starbox("setValue", ($('.customStarts, .customStarts2').attr("data-rate")));
         }
     }
 
@@ -277,21 +277,6 @@ document.addEventListener('DOMContentLoaded', () => {
             duration: 0,
             easing: "linear"
         });
-    })
-
-
-
-    const reviewInfo = $('.review-info > div')
-    const scrollChange = 280
-
-    $(window).scroll(function () {
-        let scroll = $(window).scrollTop();
-
-        if (scroll > scrollChange) {
-            reviewInfo.addClass('fixed')
-        } else {
-            reviewInfo.removeClass('fixed')
-        }
     })
 
 })

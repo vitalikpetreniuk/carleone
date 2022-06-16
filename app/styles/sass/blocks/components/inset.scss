@@ -6,12 +6,6 @@
   &__wrapper {
     max-width: 574px;
     width: 100%;
-    @include media-max(1399) {
-      max-width: 540px;
-    }
-    @include media-max(1199) {
-      max-width: 440px;
-    }
     @include media-max(991) {
       max-width: none;
     }

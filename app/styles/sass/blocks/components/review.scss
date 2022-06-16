@@ -12,6 +12,12 @@
     margin-left: 33px;
     max-width: 561px;
     width: 100%;
+    @include media-min(992) {
+      position: sticky;
+      position:-webkit-sticky;
+      top: 20px;
+      height: fit-content;
+    }
     & > div {
       &.fixed {
         @include media-min(992) {
