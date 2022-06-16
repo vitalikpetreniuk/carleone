@@ -4,6 +4,14 @@
     @include media-max(991) {
       margin-top: 50px;
     }
+    &-head {
+      @include media-max(991) {
+        margin: 0 -12.5px;
+      }
+      @include media-max(420) {
+        margin: 0 -7.5px;
+      }
+    }
   }
   .consultation {
     padding: 0;
@@ -18,5 +26,26 @@
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     backdrop-filter: none;
     background: rgba(255, 255, 255, 1);
+  }
+  .tabs {
+    @include media-max(991) {
+      background: none;
+      border: initial;
+      justify-content: center;
+    }
+    li {
+      @include media-max(991) {
+        margin: 0 12.5px 15px 12.5px;
+        width: calc(33.3333% - 25px);
+        border-radius: 3px;
+        border: 1px solid #ffd200;
+      }
+      @include media-max(420) {
+        margin: 0 7.5px 15px 7.5px;
+        width: calc(33.3333% - 15px);
+        border-radius: 3px;
+        border: 1px solid #ffd200;
+      }
+    }
   }
 }
